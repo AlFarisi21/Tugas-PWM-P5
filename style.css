@@ -1,0 +1,105 @@
+/* Reset dasar untuk menghilangkan margin dan padding bawaan browser */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Memastikan padding dan border tidak menambah lebar elemen */
+  }
+  
+  /* Gaya dasar body */
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font modern */
+    line-height: 1.6; /* Spasi antar baris */
+    background: linear-gradient(to right, #f0f0f0, #e0e0e0); /* Gradasi horizontal */
+    color: #333; /* Warna teks */
+    padding: 20px;
+  }
+  
+  /* Scroll halus ketika klik anchor (seperti #tentang) */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Header / bagian atas */
+  header {
+    text-align: center;
+    padding: 60px 20px;
+    background-image: url('c:/Users/Lenovo IdeaPad/Downloads/Abstract.jpeg'); /* Ganti dengan URL online jika untuk web publik */
+    background-size: cover; /* Background memenuhi seluruh header */
+    background-position: center;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Bayangan halus */
+  }
+  
+  /* Navigasi */
+  nav {
+    margin-top: 15px;
+  }
+  
+  nav a {
+    margin: 0 12px;
+    text-decoration: none; /* Hilangkan garis bawah */
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s; /* Animasi perubahan warna */
+  }
+  
+  nav a:hover {
+    color: #dff0ff; /* Warna saat hover */
+  }
+  
+  /* Tata letak konten utama */
+  main {
+    display: grid;
+    grid-template-columns: 1fr; /* Satu kolom untuk mobile */
+    gap: 24px;
+    margin-top: 30px;
+  }
+  
+  /* Setiap bagian (section) */
+  section {
+    background-color: white;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.05); /* Bayangan ringan */
+  }
+  
+  /* Gaya untuk foto profil */
+  img.profil {
+    display: block;
+    margin: 0 auto; /* Tengah */
+    width: 180px;
+    height: 180px;
+    object-fit: cover; /* Supaya tidak lonjong meskipun aspect ratio beda */
+    border-radius: 50%; /* Bentuk lingkaran */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Efek bayangan */
+  }
+  
+  /* Gambar responsif di bagian proyek */
+  img.responsive {
+    max-width: 100%; /* Tidak melebihi lebar container */
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Bagian bawah halaman */
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  /* Responsive layout untuk tablet */
+  @media (min-width: 768px) {
+    main {
+      grid-template-columns: 1fr 1fr; /* Dua kolom */
+    }
+  }
+  
+  /* Responsive layout untuk desktop */
+  @media (min-width: 1024px) {
+    main {
+      grid-template-columns: 1fr 1fr 1fr; /* Tiga kolom */
+    }
+  }  
