@@ -23,7 +23,7 @@
   header {
     text-align: center;
     padding: 60px 20px;
-    background-image: url('c:/Users/Lenovo IdeaPad/Downloads/Abstract.jpeg'); /* Ganti dengan URL online jika untuk web publik */
+    background-image: url('Abstract.jpeg'); /* Ganti dengan URL online jika untuk web publik */
     background-size: cover; /* Background memenuhi seluruh header */
     background-position: center;
     color: white;
